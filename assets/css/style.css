@@ -1,11 +1,17 @@
 button {
 	
-	margin-left: 10px;
-	margin-right: 10px;
+margin: 10px;
+
+}
+
+.buttons-div {
+	margin: auto;
+
 }
 
 #gif-gallery {
-	margin-left: 10px;
-	margin-right: 10px;
+/*	margin-left: 10px;
+	margin-right: 10px;*/
+
 }
 
