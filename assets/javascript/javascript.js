@@ -18,7 +18,7 @@ $(document).ready(function() {
         $("#gif-gallery").empty();
         var selectedGif = this.innerHTML;
 
-        var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + selectedGif + "&limit=10&api_key=dc6zaTOxFJmzC";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + selectedGif + "&limit=10&api_key=dc6zaTOxFJmzC";
 
         $.get(queryURL).done(function(response) {
             object = response;
