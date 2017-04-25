@@ -4,7 +4,7 @@ $(document).ready(function() {
     var dataBackup;
     var switch1;
     var switch2;
-    var topics = ["Thom Yorke Dancing", "Jimmy Page", "Jimi Hendrix", "Clayton Kershaw", "Kicked In The Nuts", "Throwing Computer"]
+    var topics = ["Giannis dunk", "The Greek Freak", "Kobe dunk", "MJ dunk", "Allen Iverson dunk", "Spud Webb dunk", "Vince Carter dunk", "Shaq dunk"]
 
     function printButtons() {
         $("#buttons-div").html("");
@@ -27,9 +27,9 @@ $(document).ready(function() {
 
                 dataBackup = `${object.data[i].images.original.url}`
 
-                $("#gif-gallery").append(`<img class="gif" src="${object.data[i].images.original_still.url}" id="img" data-backup="${object.data[i].images.original.url}">
+                $("#gif-gallery").append(`<span class="icons" id="icons"><img class="gif" src="${object.data[i].images.original_still.url}" id="img" data-backup="${object.data[i].images.original.url}">
                     <br>
-                    <p class="text center">Rating: ${object.data[i].rating}</p>`);
+                    <p class="text center">Rating: ${object.data[i].rating}</p><span>`);
             }
         })
     })
